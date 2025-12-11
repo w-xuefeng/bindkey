@@ -1,6 +1,6 @@
-type ModifierKey = "ctrl" | "shift" | "alt" | "meta";
+export type ModifierKey = "ctrl" | "shift" | "alt" | "meta";
 
-type ShortcutOptions = {
+export type ShortcutOptions = {
   type?: keyof DocumentEventMap | string;
   propagate?: boolean;
   disableInInput?: boolean;
@@ -11,7 +11,7 @@ type ShortcutOptions = {
   keycode?: number | false;
 };
 
-type ShortcutBinding = {
+export type ShortcutBinding = {
   callback: EventListener;
   target: EventTarget;
   event: string;
